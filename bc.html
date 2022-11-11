@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="styles/style_bc.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+<form action="">
+    <div class="registr">
+
+        <input type="text"
+               name="name"
+               id="name"
+               placeholder="Username"
+               required
+               autofocus
+               autocomplete="off"
+               minlength="3"
+               pattern="[a-zA-Z0-9_.]{3,10}"
+               title="login"
+
+        >
+
+        <label for="email"></label>
+        <input type="email"
+                                          name="email"
+                                          id="email"
+                                          placeholder="Email"
+                                          required
+        >
+
+        <label>
+            <input type="tel"
+                   class="phone"
+                   placeholder="Phone"
+                   maxlength="9"
+                   required
+            >
+        </label>
+        <script>$(".phone").mask("+380(99)999-9999")</script>
+
+
+        <label>
+<textarea>
+
+</textarea>
+        </label>
+
+        <p>Згоден на надання особистих даних</p>
+
+        <div>
+            <label for="checkboxone"></label><input type="radio" id="checkboxone" name="checkbox" value="Yes" />
+            <label>Так </label>
+        </div>
+        <div>
+            <label for="checkboxtwo"></label><input type="radio" id="checkboxtwo" name="checkbox" value="No" />
+            <label>Ні</label>
+        </div>
+
+        <button type = "submit">Надіслати</button>
+
+    </div>
+</form>
+
+
+</body>
+</html>
